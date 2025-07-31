@@ -1,0 +1,295 @@
+
+
+html {
+  zoom: 100%;
+  overflow-x: hidden;
+}
+
+/* Limit zoom scale using media queries (up to 150%) */
+@media (min-width: 1000px) {
+  .navbar .nav-link {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1000px) and (min-width: 800px) {
+  .navbar .nav-link {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .navbar .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+ body {
+  background-color:  	#e6f0fa	 !important;
+}
+
+
+
+
+
+
+/* ==== NAVBAR STYLING ==== */
+.navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* Circle Buttons */
+.circle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.circle-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.profile-image {
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(53, 3, 3, 0.2);
+  transition: transform 0.3s ease;
+  
+}
+
+/* Hover effect (optional) */
+.profile-image:hover {
+  transform: scale(1.03);
+  padding: 10px;
+}
+
+/* Responsive sizes */
+@media (max-width: 768px) {
+  .profile-image {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
+
+/* ==== SKILLS SECTION ==== */
+.section-title {
+  font-weight: 700;
+  color: #333;
+  border-bottom: 2px solid #198754;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skill-card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+
+/* ==== PROJECTS SECTION ==== */
+.project-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+
+/* ==== CONTACT SECTION ==== */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form .form-control {
+  border-radius: 8px;
+  box-shadow: none;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 5px rgba(25, 135, 84, 0.5);
+}
+
+.contact-form button {
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+
+/* ==== AUTH FORMS ==== */
+.auth-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+/* ==== ADMIN PANEL ==== */
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #0d6efd;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+
+.table th, .table td {
+  vertical-align: middle !important;
+  font-size: 15px;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.btn-sm {
+  padding: 4px 10px;
+  font-size: 14px;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-success {
+  background-color: #198754;
+  border: none;
+}
+
+.badge.bg-success {
+  background-color: #198754 !important;
+}
+
+.badge.bg-warning {
+  background-color: #e5f505 !important;
+  color: #000 !important;
+}
+
+.container {
+  max-width: 1100px;
+}
+
+/* admin login */
+
+.admin_login {
+  text-align: center;
+  text-decoration: dotted;
+}
+
+
+/* ==== AUTH PAGE SPECIFIC ==== */
+.auth-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.auth-form input {
+  padding: 10px;
+  font-size: 16px;
+  height: 45px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+}
+
+.auth-form input:focus {
+  border-color: #0d6efd;
+  box-shadow: none;
+}
+
+.auth-form button {
+  height: 45px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.alert-danger {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+
+.card.resume-upload {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+}
+
+.resume-upload .card-header {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+
+.resume-upload .form-control {
+  height: 45px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.resume-upload .btn-success {
+  height: 45px;
+  font-weight: 600;
+}
+
+.resume-upload .alert {
+  font-size: 15px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+
+
